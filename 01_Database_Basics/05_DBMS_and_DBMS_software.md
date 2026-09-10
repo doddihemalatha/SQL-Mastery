@@ -40,3 +40,35 @@ Contains the actual data
 DBMS
     ↓
 Manages the database
+# Types of DBMS
+
+A **Database Management System (DBMS)** can be classified based on how it organizes and manages data.
+
+The major types of DBMS are:
+
+1. Hierarchical DBMS
+2. Network DBMS
+3. Relational DBMS (RDBMS)
+4. Object-Oriented DBMS
+5. NoSQL DBMS
+
+---
+
+## 1. Hierarchical DBMS
+
+A **Hierarchical DBMS** organizes data in a **tree-like structure** using parent-child relationships.
+
+Each child record is generally associated with one parent.
+
+### Example
+
+```text
+University
+│
+├── Computer Science
+│   ├── Student 1
+│   └── Student 2
+│
+└── Data Science
+    ├── Student 3
+    └── Student 4
