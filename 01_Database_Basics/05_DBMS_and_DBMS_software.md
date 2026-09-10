@@ -40,6 +40,8 @@ Contains the actual data
 DBMS
     ↓
 Manages the database
+```
+
 # Types of DBMS
 
 A **Database Management System (DBMS)** can be classified based on how it organizes and manages data.
