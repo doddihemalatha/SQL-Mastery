@@ -56,7 +56,7 @@ The major types of DBMS are:
 
 ---
 
-# Relational Database Management System (RDBMS)
+## Relational Database Management System (RDBMS)
 
 An RDBMS is a type of DBMS that mainly stores structured data in tables consisting of rows and columns.
 
@@ -75,7 +75,7 @@ Oracle Database
 Microsoft SQL Server
 SQLite
 
-# NoSQL Database Management Systems
+## NoSQL Database Management Systems
 
 NoSQL databases are non-relational database systems designed to work with data models other than traditional relational tables.
 
@@ -92,12 +92,12 @@ Redis
 Neo4j
 Cassandra
 
-#Document Database
+###Document Database
 Definition
 
 A document database stores data as documents, commonly using formats such as JSON-like structures.
 
-Example
+####Example
 {
   "student_id": 101,
   "name": "Hema",
@@ -107,24 +107,24 @@ Example
 
 Instead of storing this information in rows and columns, the complete record can be represented as a document.
 
-###Examples
+####Examples
 MongoDB
 CouchDB
 Couchbase
 
-###Common Uses
+####Common Uses
 Web applications
 Content management
 Product catalogs
 User profiles
 Applications with flexible data structures
 
-#Key-Value Database
+###Key-Value Database
 Definition
 
 A key-value database stores information as a collection of key-value pairs.
 
-###Example
+####Example
 Key              Value
 ------------------------------
 student:101      Hema
@@ -133,36 +133,36 @@ student:103      Priya
 
 The key is used to identify and retrieve the corresponding value.
 
-###Examples
+####Examples
 Redis
 Amazon DynamoDB
 Riak
 
-###Common Uses
+####Common Uses
 Caching
 Session management
 Real-time applications
 Fast lookups
 
-#Wide-Column Database
+###Wide-Column Database
 Definition
 
 A wide-column database organizes data using rows and flexible columns grouped into column families.
 
 It is designed for large-scale distributed data workloads.
 
-###Examples
+####Examples
 Apache Cassandra
 HBase
 Google Cloud Bigtable
 
-###Common Uses
+####Common Uses
 Large-scale applications
 Distributed systems
 Time-series workloads
 High-volume data processing
 
-#Graph Database
+###Graph Database
 Definition
 
 A graph database represents data using:
@@ -187,12 +187,12 @@ Hema = Node
 Priya = Node
 Ravi = Node
 "follows" = Relationship
-###Examples
+####Examples
 Neo4j
 Amazon Neptune
 ArangoDB
 
-###Common Uses
+####Common Uses
 Social networks
 Recommendation systems
 Fraud detection
@@ -200,11 +200,11 @@ Network analysis
 Relationship-heavy applications
 
 
-#Hierarchical Database Management Systems
+##Hierarchical Database Management Systems
 
 A hierarchical database organizes data in a tree-like structure using parent-child relationships.
 
-Example:
+####Example:
 
 University
 │
@@ -218,7 +218,7 @@ University
 
 Data is organized from parent to child.
 
-#Network Database Management Systems
+###Network Database Management Systems
 
 A network database represents data using relationships between records.
 
@@ -226,7 +226,7 @@ Unlike a simple hierarchical structure, a record can have relationships with mul
 
 This allows more complex relationships between data.
 
-#Object-Oriented Database Management Systems
+##Object-Oriented Database Management Systems
 
 An object-oriented database stores data in the form of objects, similar to the object-oriented programming concept.
 
