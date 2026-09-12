@@ -1,128 +1,176 @@
-Storage
+# Storage
 
-1. What is Storage?
+## 1. What is Storage?
 
-Storage means keeping data in a place so that it can be used later.
+**Storage means keeping data in a place so that it can be used later.**
 
 In computers, storage is used to keep digital data such as:
 
-Photos
+* Photos
+* Videos
+* Documents
+* Applications
+* Database records
 
-Videos
+### Simple Memory
 
-Documents
+> **Storage = keeping data for future use.**
 
-Applications
+---
 
-Database records
+# 2. Types of Computer Storage
 
-Simple Memory
+Computer storage can be broadly understood as **Primary Storage** and **Secondary Storage**.
 
-Storage = keeping data for future use.
+## Primary Storage
 
-2. Types of Computer Storage
-
-Computer storage can be broadly understood as Primary Storage and
-Secondary Storage.
-
-Primary Storage
-
-Examples:
-
-RAM
-
-Cache
-
-Primary storage is mainly used while the computer is actively working
-with data.
-
-Secondary Storage
+Primary storage is mainly used while the computer is actively working with data.
 
 Examples:
 
-HDD
+* RAM
+* Cache
 
-SSD
+Primary storage provides fast access to data needed during processing.
 
-Secondary storage is used to keep data persistently.
+### Simple Memory
 
-For databases, persistent storage is especially important because data
-needs to remain available even after the system is turned off.
+> **Primary Storage = Used while the computer is working**
 
-3. RAM vs SSD/HDD
+## Secondary Storage
+
+Secondary storage is used to keep data **persistently**.
+
+Examples:
+
+* HDD
+* SSD
+
+Secondary storage retains data even when the computer is turned off.
+
+For databases, persistent storage is especially important because database data needs to remain available after a system restart or shutdown.
+
+### Simple Memory
+
+> **Secondary Storage = Keep data for later**
+
+---
+
+# 3. RAM vs SSD/HDD
 
 Think about studying.
 
-You take a book from a cupboard and put it on your study table so you
-can work with it.
+You take a book from a cupboard and put it on your study table so you can work with it.
 
 Similarly:
 
-SSD/HDD → RAM → CPU
+```text
+SSD / HDD
+    ↓
+  RAM
+    ↓
+  CPU
+```
 
-Data can be stored on an SSD/HDD and brought into RAM when the computer
-needs to work with it.
+Data can be stored on an SSD or HDD and brought into RAM when the computer needs to work with it.
 
-RAM
+## RAM
 
-RAM is temporary working memory.
+**RAM (Random Access Memory)** is temporary working memory used by the computer while programs are running.
 
-RAM = work now
+> **RAM = Work now**
 
-When the computer is turned off, data in RAM is generally lost.
+When the computer is turned off, the data stored in RAM is generally lost.
 
-SSD/HDD
+## SSD/HDD
 
-SSD and HDD provide persistent storage.
+**SSD (Solid-State Drive)** and **HDD (Hard Disk Drive)** provide persistent storage.
 
-SSD/HDD = keep for later
+> **SSD/HDD = Keep for later**
 
-Data stored there remains available after the computer is turned off.
+Data stored on them remains available after the computer is turned off.
 
-4. What is Persistent Storage?
+### Simple Comparison
 
-Persistent storage means storage in which data remains available even
-when the system is turned off.
+| Feature                       | RAM                      | SSD/HDD                |
+| ----------------------------- | ------------------------ | ---------------------- |
+| Purpose                       | Temporary working memory | Persistent storage     |
+| Data retained after shutdown? | Generally no             | Yes                    |
+| Speed                         | Very fast                | Slower than RAM        |
+| Main use                      | Active processing        | Long-term data storage |
 
-Example
+---
 
-You save a photo on your phone, turn off the phone, and turn it on
-again.
+# 4. What is Persistent Storage?
 
-The photo is still there.
+**Persistent storage** means storage in which data remains available even when the system is turned off.
 
-That is an example of persistent storage.
+### Example
 
-5. Why is Storage Important for Databases?
+You save a photo on your phone.
+
+Then:
+
+```text
+Save Photo
+    ↓
+Turn off phone
+    ↓
+Turn on phone
+    ↓
+Photo is still available
+```
+
+The photo is stored in persistent storage.
+
+### Simple Definition
+
+> **Persistent storage keeps data even when the system is powered off.**
+
+---
+
+# 5. Why is Storage Important for Databases?
 
 Databases can contain huge amounts of important data.
 
 For example, an online shopping system may store:
 
-Customers
+* Customers
+* Products
+* Orders
+* Payments
+* Delivery information
 
-Products
-
-Orders
-
-Payments
-
-Delivery information
-
-This data must remain available even when the computer or server is
-restarted.
+This data must remain available even when the computer or server is restarted.
 
 Therefore:
 
-Databases need persistent storage to keep data available for future
-use.
+> **Databases need persistent storage to keep data available for future use.**
 
-6. How is Database Data Stored?
+### Example
 
-In a relational database, we see data as tables.
+Imagine an online shopping database stores an order:
 
-Example
+```text
+Order ID: 5001
+Customer: Hema
+Product: Laptop
+Amount: ₹50,000
+```
 
+If this information were stored only in RAM, it would generally be lost when the system shuts down.
+
+The database therefore relies on persistent storage to retain important data.
+
+---
+
+# 6. How is Database Data Stored?
+
+In a relational database, we see data as **tables**.
+
+### Example
+
+```text
 Students Table
 
 Student_ID | Name  | Course
@@ -130,72 +178,94 @@ Student_ID | Name  | Course
 101        | Hema  | Data Science
 102        | Ravi  | BCA
 103        | Priya | B.Tech
+```
 
-This is the logical view of the data.
+This is the **logical view** of the data.
 
-Physically, the database system manages how the records are stored on
-storage devices.
+Physically, the database system manages how the records are stored on persistent storage.
 
-Conceptually
+### Conceptual Flow
 
+```text
 Logical View
      ↓
    Table
      ↓
-Database System
+   DBMS
      ↓
 Physical Storage
      ↓
-  SSD / HDD
+ SSD / HDD
+```
 
-You normally do not need to know the exact physical location of each
-record.
+You normally do not need to know the exact physical location of each record.
 
-The DBMS manages those details.
+The **DBMS manages those details**.
 
-7. Logical Storage vs Physical Storage
+---
 
-Logical Level
+# 7. Logical Storage vs Physical Storage
 
-At the logical level, we think about:
+## Logical Level
 
+At the logical level, we think about the structure and meaning of the data.
+
+For example:
+
+```text
 Students Table
 ----------------
 Student_ID
 Name
 Course
+```
 
-We focus on the structure and meaning of the data.
+We focus on:
 
-Physical Level
+* What data exists
+* How the data is organized
+* How different pieces of data are related
 
-At the physical level, the database system handles:
+### Simple Memory
 
-Where the data is stored
+> **Logical = What the data looks like**
 
-How the data is organized on storage
+---
 
-How stored data is accessed
+## Physical Level
 
-Simple Memory
+At the physical level, the database system handles details related to how data is stored and accessed.
 
-Logical = what the data looks like
+This includes:
 
-Physical = how the data is actually stored
+* Where the data is stored
+* How the data is organized on storage
+* How stored data is accessed
+* How storage structures are managed
 
-8. Storage in a DBMS
+Users normally do not need to know these details.
+
+### Simple Memory
+
+> **Physical = How the data is actually stored**
+
+---
+
+# 8. Storage in a DBMS
 
 Suppose a user sends this SQL query:
 
+```sql
 SELECT * FROM Students;
+```
 
-The user does not need to specify the exact disk location of the
-records.
+The user does not need to specify the exact physical location of the student records.
 
 The DBMS manages the underlying data-access process.
 
-Conceptual Flow
+### Conceptual Flow
 
+```text
 User
   ↓
 SQL Query
@@ -207,136 +277,61 @@ Data Access / Storage Management
 Physical Storage
   ↓
 SSD / HDD
+```
 
 The DBMS hides the physical storage details from the user.
 
-9. Storage vs Storage Manager
+### What the User Knows
+
+The user knows:
+
+```text
+Students Table
+```
+
+and can execute:
+
+```sql
+SELECT * FROM Students;
+```
+
+### What the DBMS Handles
+
+The DBMS handles the internal process of:
+
+```text
+Finding the required data
+        ↓
+Accessing the stored data
+        ↓
+Reading the required records
+        ↓
+Returning the result
+```
+
+The exact internal implementation depends on the DBMS.
+
+---
+
+# 9. Storage vs Storage Manager
 
 These two terms are different.
 
-Storage
+## Storage
 
-Storage means the place or mechanism where data is kept.
+**Storage** means the place or mechanism where data is kept.
 
 Examples:
 
+```text
 SSD
 HDD
+```
 
-Storage Manager
+Storage provides the underlying persistent medium for retaining data.
 
-The Storage Manager is a DBMS component/responsibility that manages
-how database data is stored and how stored data is accessed.
+### Simple Memory
 
-Simple Analogy
+> **Storage = Where data is kept**
 
-Think about a cupboard:
-
-Cupboard    = Storage
-Storekeeper = Storage Manager
-Clothes     = Data
-
-The cupboard keeps the clothes.
-
-The storekeeper manages them.
-
-Simple Memory
-
-Storage = where data is kept
-
-Storage Manager = manages storage and access to database data
-
-10. Important Distinction
-
-Storage is the general concept of keeping data.
-
-SSD and HDD are examples of storage devices.
-
-Storage can refer more broadly to the mechanisms and systems used to
-retain data.
-
-11. Complete Mental Model
-
-DATA
-  ↓
-DATABASE
-  ↓
-DBMS
-  ↓
-STORAGE MANAGEMENT
-  ↓
-PHYSICAL STORAGE
-  ↓
-SSD / HDD
-
-Understanding the Flow
-
-Data is the information we want to keep.
-
-A Database organizes that data.
-
-The DBMS manages the database.
-
-Storage Management handles how database data is stored and
-accessed.
-
-Physical Storage provides the underlying place for persistent
-data.
-
-SSD/HDD are examples of physical storage devices.
-
-12. Key Takeaways
-
-Storage means keeping data so it can be used later.
-
-RAM is mainly temporary working memory.
-
-SSD/HDD provide persistent storage.
-
-Persistent storage keeps data available even after the system is
-turned off.
-
-Databases need persistent storage to keep important data available.
-
-A relational database provides a logical view of data through
-tables.
-
-The DBMS manages the physical storage details.
-
-Logical level focuses on what the data looks like.
-
-Physical level focuses on how the data is actually stored.
-
-Storage and Storage Manager are not the same.
-
-Storage = where data is kept.
-
-Storage Manager = manages storage and access to database data.
-
-Final Memory
-
-Storage
-   ↓
-Keeps data
-
-RAM
-   ↓
-Temporary working memory
-
-SSD / HDD
-   ↓
-Persistent storage
-
-DBMS
-   ↓
-Manages database data
-
-Storage Manager
-   ↓
-Manages storage and access
-
-Remember:
-
-Storage = Keep the data
-
-Storage Manager = Manage the data storage and access
+---
