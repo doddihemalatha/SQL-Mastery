@@ -1,7 +1,7 @@
 # DDL — Real-World Practice
 
 ### Scenario
-
+'''
 You are working as a Junior SQL Developer for an e-commerce company. Your team lead asks you to create and manage a product database according to the following requirements:
 
 1. Create a `Products` table to store Product ID, Product Name, Price, and Category.
@@ -19,7 +19,7 @@ You are working as a Junior SQL Developer for an e-commerce company. Your team l
 7. Remove all testing records from the `Product_Details` table while keeping its structure.
 
 8. The company no longer needs the `Product_Details` table, so completely remove it.
-
+'''
 
 CREATE TABLE Products(
 Product_ID INT,
