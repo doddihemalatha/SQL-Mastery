@@ -61,22 +61,22 @@ Your manager says:
 
 '''
 
-1. INSERT
+1. 
 INSERT INTO Customers
 VALUES (105, 'Anjali', 'Vizag', 'Premium');
 
-2. UPDATE
+2. 
 UPDATE Customers
 SET Membership = 'Premium'
 WHERE Customer_ID = 103;
 
-3. DELETE
+3. 
 DELETE FROM Customers
 WHERE Customer_ID = 104;
 
-4. UPDATE
+4. 
 UPDATE Customers
 SET Membership = 'Premium';
 
-5. TRUNCATE
+5. 
 TRUNCATE TABLE Customers;
