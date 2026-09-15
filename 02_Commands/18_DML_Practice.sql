@@ -1,3 +1,4 @@
+'''
 # DML Practice Questions
 
 You are working as a **Junior Data Analyst** for an e-commerce company.
@@ -58,7 +59,7 @@ Your manager says:
 
 > "The customer testing data is no longer needed. Remove all customer records, but the `Customers` table will be reused tomorrow."
 
-
+'''
 
 1. INSERT
 INSERT INTO Customers
