@@ -60,18 +60,22 @@ Your manager says:
 
 
 
-1. INSERT INTO Customers
-   VALUES (105,'Anjali','Vizag',Premium');
+1. INSERT
+INSERT INTO Customers
+VALUES (105, 'Anjali', 'Vizag', 'Premium');
 
-2 .UPDATE Customers
-   SET Membership = 'Premium'
-   WHERE Customer_ID =103;
+2. UPDATE
+UPDATE Customers
+SET Membership = 'Premium'
+WHERE Customer_ID = 103;
 
-3. DELETE FROM Customers
-   WHERE Customer_ID =104;
+3. DELETE
+DELETE FROM Customers
+WHERE Customer_ID = 104;
 
-4. UPDATE Customers
-   SET Membership = 'Premium';
+4. UPDATE
+UPDATE Customers
+SET Membership = 'Premium';
 
-5. TRUNCATE TABLE Customers;
-
+5. TRUNCATE
+TRUNCATE TABLE Customers;
